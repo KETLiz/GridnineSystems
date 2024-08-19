@@ -30,6 +30,9 @@ public class MoreThanTwoHourOnEarth implements Filter{
         return filterFlights;
     }
 
+    /*
+    Метод проверки: время, проведённое на земле, меньше 2 часов true
+     */
     private boolean twoHoursCheck(Flight flight) {
         List<Segment> segments = flight.getSegments();
         int sum = 0;
