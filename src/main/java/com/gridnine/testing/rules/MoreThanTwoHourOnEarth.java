@@ -8,6 +8,9 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Класс, исключающий из списка перелётов, те перелёты, общее время, проведённое на земле которых, превышает два часа
+ */
 public class MoreThanTwoHourOnEarth implements Filter{
     List<Flight> filterFlights = new ArrayList<>();
     private FlightBuilder builder;
